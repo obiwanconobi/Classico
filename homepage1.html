@@ -1,0 +1,490 @@
+<!--
+<div class="nl-inputs-wrapper ib cf">
+<form data-thanktranslation='Thanks' method="post" action="" onsubmit="return ekmResponseSignupUser(this)" >
+
+  <div class="email ib"><input id="ekmResponseEmailAddress" class="ekmResponseEmailAddress" name="ekmResponseEmailAddress" type="text" placeholder="Enter Your Email Address..."  /></div>
+
+  <div class="signup-button ib"><input Subscribe id="ekmResponseSignupButton" class="ekmResponseSignupButton" name="ekmResponseSignupButton" type="submit" value="Sign Up" /></div><!-- signup-button ->
+
+</form>
+</div>
+-->
+
+<html lang="en-gb">
+<head>
+  <title>Classico - Parts for Classic Cars</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+body{
+  max-width:1280px;
+  margin:auto;
+
+  font-family: 'Roboto', sans-serif;
+
+  font-weight:600;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+
+}
+h2{
+
+}
+button{
+  background:black;
+  color:white;
+  border-color:black;
+  border-radius:5px;
+  font-size:20px;
+}
+button a{
+  color:white;
+  text-decoration:none;
+  font-size:20px;
+}
+.header{
+/*  max-width:1280px;*/
+/*  border-bottom:1px solid;*/
+/*  min-height:40px;*/
+  max-height:19px;
+/*  display:inline-flex;*/
+  display:grid;
+  grid-template-columns:85% 15%;
+  background:#fff;
+  width:100%;
+  position:fixed;
+}
+.header a{
+  color:#000;
+  text-transform: uppercase;
+  text-decoration:none;
+  font-family: 'Roboto', sans-serif;
+
+  font-weight:600;
+  font-size:13px;
+}
+.header a:hover{
+    color:#0079ff;
+}
+.header li{
+  display:inline;
+}
+
+.header-left{
+  float:left;
+  display:flex;
+
+}
+
+/* .header-left li{
+  padding-right:3px;
+  border-right:1px solid;
+} */
+
+.header-right{
+  float:right;
+  display:flex;
+
+}
+/*.header-right li{
+  padding-right:3px;
+  border-right:1px solid;
+}*/
+.header-link-login{
+  margin-left:60%;
+}
+.header-link-about{
+  margin-left:10%;
+}
+
+.navi-bar{
+  background-color:#636363;
+  /*  vertical-align:middle;*/
+}
+.content {
+/*  padding: 16px;*/
+background-color:#636363;
+}
+.sticky {
+  position:fixed;
+  top:0;
+  width:100%;
+}
+.sticky + .content {
+  /*padding-top: 102px;*/
+}
+
+.navigation-bar{
+  text-align:center;
+  height:70px;
+}
+.navigation-bar ul{
+  padding-top:24px;
+}
+
+
+.navigation-bar a{
+  color:white;
+  font-size:22px;
+  text-transform: uppercase;
+  padding:5px;
+  font-weight:400;
+  text-decoration:none;
+}
+
+.navigation-bar a:hover{
+  color:#0079ff;
+}
+.navigation-bar a:active{
+  color:#ff2b2b;
+}
+.navigation-bar li{
+  display:inline;
+}
+.main-banner-image img{
+  max-width:1280px;
+  width:100%;
+  height:auto;
+}
+.main-product-section{
+  width:100%;
+  max-width:1280px;
+  height:450px;
+  background-color:#636363;
+  text-align:center;
+
+}
+
+.main-product-section h1{
+  color:white;
+  font-size:48px;
+  margin-top:0px;
+  padding-top:10px;
+}
+.main-product-section h2{
+  font-size:22px;
+  color:white;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.main-product-section h3{
+    font-size:16px;
+    color:white;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:25% 25% 25% 25%;
+}
+
+.promo-images img{
+  width:100%;
+  max-width:1280px;
+  padding-bottom:5px;
+}
+.newsletter{
+  text-align:center;
+}
+.newsletter h1{
+  color:white;
+}
+.newsletter p{
+  color:white;
+}
+.newsletter input[type="text"] {
+    border-radius: 2px 0 0 2px;
+    border: none;
+    padding: 10px;
+    height: 18px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    color: #333;
+    width: 300px;
+}
+input[type="submit"]{
+  background:black;
+  border-color:black;
+  color:white;
+}
+.nl-inputs-wrapper.ib.cf{
+  margin-left:28%;
+
+}
+.email.ib{
+  float:left;
+}
+.signup-button.ib{
+  float:left;
+}
+.footer{
+  display:grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  background-color:#363636;
+}
+.footer h1{
+  color:#BEBEBE;
+  font-weight:300;
+}
+.footer-column-1{
+  border-right:1px solid;
+  border-color:#bebebe;
+}
+
+.footer-column-1 li{
+  text-align:left;
+  color:#BEBEBE;
+  font-weight:300;
+  font-size:14px;
+  margin-top:25px;
+}
+.footer-column-2{
+  text-align:center;
+  border-right:1px solid;
+  border-color:#bebebe;
+
+}
+.footer-column-2 p{
+  color:#bebebe;
+  font-weight:200;
+}
+.footer-column-3 img{
+  padding:5px;
+}
+.copyright{
+  text-align:center;
+  background-color:#636363;
+
+}
+.copyright p{
+  color:#bebebe;
+  font-size:12px;
+}
+</style>
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myNavi");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="index.asp">Contact Us</a></li>
+        <li><a href="index.asp">About Us</a></li>
+
+      </ul>
+
+      <!--
+      <div class="header-link-home">
+        <a href="https://www.panaroworld.com">Home</a>
+      </div>
+      <div class="header-link-contact">
+        <a href="https://www.panaroworld.com">Contact Us</a>
+      </div>
+
+      <div class="header-link-about">
+        <a href="https://www.panaroworld.com">About Us</a>
+      </div>
+    -->
+    </div>
+
+
+    <div class="header-right">
+      <ul>
+        <li><a href="index.asp">Login</a></li>
+        <li><a href="index.asp">Cart</a></li>
+
+
+      </ul>
+
+    <!--  <div class="header-link-login">
+        <a href="https://www.panaroworld.com">Login</a>
+      </div>
+    -->
+    </div>
+  </div>
+
+  <div class="navi-bar" id="myNavi">
+      <div class="logo">
+
+      </div>
+      <div class="navigation-bar">
+      <ul>
+        <li><a href="index.asp">Ford</a></li>
+        <li><a href="index.asp">MG</a></li>
+        <li><a href="index.asp">Plymouth</a></li>
+        <li><a href="index.asp">Cadillac</a></li>
+        <li><a href="index.asp">Lotus</a></li>
+      </ul>
+      </div>
+
+      <div class="search">
+
+      </div>
+  </div>
+<div class="content">
+
+
+  <div class="main-banner-image">
+    <img src="images/mainbanner.png" alt="2 cars racin'">
+  </div>
+  <div class="main-product-section">
+
+    <h1>OUR MOST POPULAR PARTS</h1>
+    <div class="products">
+
+
+    <div>
+
+    <a href="index.asp"><img src="https://vignette.wikia.nocookie.net/epicrapbattlesofhistory/images/4/4f/White_square.jpg/revision/20140413154605" alt=""></a>
+    <h3>Product 1</h3>
+    <h2>£150.99</h2>
+    <button><a href="index.asp">Buy Now!</a></button>
+    </div>
+    <div>
+      <a href="index.asp"><img src="https://vignette.wikia.nocookie.net/epicrapbattlesofhistory/images/4/4f/White_square.jpg/revision/20140413154605" alt=""></a>
+      <h3>Product 2</h3>
+      <h2>£150.99</h2>
+      <button><a href="index.asp">Buy Now!</a></button>
+    </div>
+    <div>
+      <a href="index.asp"><img src="https://vignette.wikia.nocookie.net/epicrapbattlesofhistory/images/4/4f/White_square.jpg/revision/20140413154605" alt=""></a>
+      <h3>Product 3</h3>
+      <h2>£150.99</h2>
+      <button><a href="index.asp">Buy Now!</a></button>
+    </div>
+    <div>
+      <a href="index.asp"><img src="https://vignette.wikia.nocookie.net/epicrapbattlesofhistory/images/4/4f/White_square.jpg/revision/20140413154605" alt=""></a>
+      <h3>Product 4</h3>
+      <h2>£150.99</h2>
+      <button><a href="index.asp">Buy Now!</a></button>
+      <!--<button href="index.asp" type="button" >Buy Now</button> -->
+    </div>
+
+    </div>
+  </div>
+
+  <div class="promo-images">
+
+    <div class="promo-image-1">
+      <img src="images\promo1.png" alt="">
+    </div>
+    <div class="promo-image-2">
+      <img src="images\promo2.png" alt="">
+    </div>
+    <div class="promo-image-3">
+      <img src="images\promo3.png" alt="">
+    </div>
+  </div>
+  <div class="main-product-section">
+
+    <h1>SPECIAL OFFERS</h1>
+    <div class="products">
+
+
+    <div>
+
+    <a href="index.asp"><img src="https://vignette.wikia.nocookie.net/epicrapbattlesofhistory/images/4/4f/White_square.jpg/revision/20140413154605" alt=""></a>
+    <h3>Product 1</h3>
+    <h2>£150.99</h2>
+    <button><a href="index.asp">Buy Now!</a></button>
+    </div>
+    <div>
+      <a href="index.asp"><img src="https://vignette.wikia.nocookie.net/epicrapbattlesofhistory/images/4/4f/White_square.jpg/revision/20140413154605" alt=""></a>
+      <h3>Product 2</h3>
+      <h2>£150.99</h2>
+      <button><a href="index.asp">Buy Now!</a></button>
+    </div>
+    <div>
+      <a href="index.asp"><img src="https://vignette.wikia.nocookie.net/epicrapbattlesofhistory/images/4/4f/White_square.jpg/revision/20140413154605" alt=""></a>
+      <h3>Product 3</h3>
+      <h2>£150.99</h2>
+      <button><a href="index.asp">Buy Now!</a></button>
+    </div>
+    <div>
+      <a href="index.asp"><img src="https://vignette.wikia.nocookie.net/epicrapbattlesofhistory/images/4/4f/White_square.jpg/revision/20140413154605" alt=""></a>
+      <h3>Product 4</h3>
+      <h2>£150.99</h2>
+      <button><a href="index.asp">Buy Now!</a></button>
+    </div>
+    </div>
+  </div>
+
+        <div class="newsletter">
+          <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+          <p>
+            Subscribe for great offers and deals
+          </p>
+
+
+        <div class="footer">
+          <div class="footer-column-1">
+            <h1>Links</h1>
+            <ul>
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Privacy Policy</li>
+              <li>Terms and Conditions</li>
+              <li>Sitemap</li>
+            </ul>
+          </div>
+          <div class="footer-column-2">
+            <h1>Contact Us</h1>
+            <p>
+              123 Car Avenue, Motor City, United Kingdom <br /> MC1 8VR
+            </p>
+
+            <p>
+              sales@classico.co.uk
+            </p>
+            <p>
+              01234 567890
+            </p>
+          </div>
+          <div class="footer-column-3">
+            <h1>Follow Us</h1>
+            <img src="images/facebook.png" alt="2 cars racin'">
+            <img src="images/twitter.png" alt="2 cars racin'">
+            <img src="images/instagram.png" alt="2 cars racin'">
+            <img src="images/youtube.png" alt="2 cars racin'">
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright Classico 2018
+          </p>
+          <p>
+            Powered by EKM
+          </p>
+        </div>
+
+</div><!--content div-->
+
+
+</body>
+</html>
